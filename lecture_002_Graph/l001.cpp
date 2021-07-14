@@ -127,7 +127,7 @@ int allPath(int src, int dest, vector<bool> &vis, int w, string ans)
 
 class allSolutionPair
 {
-public:
+public: 
     int lightW = 1e7;
     int heavyW = 0;
     int ceil = 1e7;
@@ -184,6 +184,7 @@ void hamintonianPath(int src, int osrc, vector<bool> &vis, int count, string ans
     }
 
     vis[src] = true;
+
     for (Edge e : graph[src])
     {
         if (!vis[e.v])
@@ -658,9 +659,9 @@ void set1()
 {
     // removeEdge(3, 4);
     // removeVtx(3);
-
     // vector<bool> vis(N, false);
     // cout << hasPath(0, 6, vis)<<endl;
+
     // cout << allPath(0, 6, vis, 0, "") << endl;
     // preOrder(2, vis, 0, to_string(0) + " ");
 
