@@ -198,7 +198,7 @@ int burstBallon(vector<int> &arr, int si, int ei, vector<vector<int>> &dp)
 int maxCoins(vector<int> &nums)
 {
     int n = nums.size();
-    vector<vector<int>> dp(n, vector<int>(n, 0);
+    vector<vector<int>> dp(n, vector<int>(n, 0));
     cout<<burstBallon(nums,0,n-1,dp)<<endl;
 }
 
